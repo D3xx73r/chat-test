@@ -30,7 +30,7 @@ Router.route('/', function () {
 Router.route('/messages', function () {
   this.render('messages', {
     data: function () {
-      return Messages.find();
+      return Messages.find({});
     }
   });
 })
